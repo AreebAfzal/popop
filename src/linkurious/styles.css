@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /** Tooltip styling */
+  .tt {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .tt .tt-content {
+    z-index: 99999;
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: .4rem .8rem;
+    color: #4a4a4a;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    max-width: 24rem;
+  }
+  
+  .tt .tt-content {
+    top: auto;
+    bottom: 100%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -0.7rem);
+  }
+  
+  .circle {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
+  /** Input styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    margin: 15
+  }
+  
+  .radio {
+    margin: 5;
+  }
+  
+  .btn {
+    padding: 6px 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    margin: 5;
+  }
+  
+  .btn:hover {
+    color: #333;
+    background-color: #e6e6e6;
+  }
+
+
+
+  /* sidebar */
+
+
+
+.tran {
+  max-width: 100%;
+  transition: 0.3s ease-in-out !important; /* Adjust the transition duration as needed */
+}
+
+.tran.show {
+  max-width: 300px; /* Set the desired width of the expanded element */
+}
+
